@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetrePrincipale</class>
+ <widget class="QMainWindow" name="FenetrePrincipale">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNouvelle_instance"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOutils">
+    <property name="title">
+     <string>Outils</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAlgorithmes">
+    <property name="title">
+     <string>Algorithmes</string>
+    </property>
+    <widget class="QMenu" name="menuHeuristiques">
+     <property name="title">
+      <string>Heuristiques</string>
+     </property>
+     <addaction name="actionPlus_proche_voisin"/>
+     <addaction name="actionPlus_Proche_Voisin_Syt_matique"/>
+     <addaction name="actionPlus_Proche_Voisin_Al_atoire"/>
+     <addaction name="separator"/>
+     <addaction name="actionPlus_Lointain_Voisin_Syst_matique"/>
+     <addaction name="separator"/>
+     <addaction name="actionHeure_de_Bouf"/>
+     <addaction name="actionHeure_de_Bouf_Yagouni_Mouhammed_Temps_R_el"/>
+    </widget>
+    <widget class="QMenu" name="menuM_taheuristiques">
+     <property name="title">
+      <string>Métaheuristiques</string>
+     </property>
+     <addaction name="actionR_cuit_Simul"/>
+    </widget>
+    <widget class="QMenu" name="menuTransformations">
+     <property name="title">
+      <string>Transformations</string>
+     </property>
+     <addaction name="action2_Opt"/>
+    </widget>
+    <addaction name="menuHeuristiques"/>
+    <addaction name="menuTransformations"/>
+    <addaction name="separator"/>
+    <addaction name="menuM_taheuristiques"/>
+    <addaction name="separator"/>
+    <addaction name="actionHybridation"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="action_propos"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuOutils"/>
+   <addaction name="menuAlgorithmes"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNouvelle_instance">
+   <property name="text">
+    <string>Nouvelle instance</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionHybridation">
+   <property name="text">
+    <string>Hybridation</string>
+   </property>
+  </action>
+  <action name="action_propos">
+   <property name="text">
+    <string>À propos</string>
+   </property>
+  </action>
+  <action name="actionPlus_proche_voisin">
+   <property name="text">
+    <string>Plus Proche Voisin</string>
+   </property>
+  </action>
+  <action name="actionR_cuit_Simul">
+   <property name="text">
+    <string>Récuit Simulé</string>
+   </property>
+  </action>
+  <action name="actionPlus_Proche_Voisin_Syt_matique">
+   <property name="text">
+    <string>Plus Proche Voisin Sytématique</string>
+   </property>
+  </action>
+  <action name="actionPlus_Proche_Voisin_Al_atoire">
+   <property name="text">
+    <string>Plus Proche Voisin Aléatoire</string>
+   </property>
+  </action>
+  <action name="action2_Opt">
+   <property name="text">
+    <string>2-Opt</string>
+   </property>
+  </action>
+  <action name="actionPlus_Lointain_Voisin_Syst_matique">
+   <property name="text">
+    <string>Plus Lointain Voisin Systématique</string>
+   </property>
+  </action>
+  <action name="actionHeure_de_Bouf">
+   <property name="text">
+    <string>Heure de Bouf (Yagouni Mouhammed)</string>
+   </property>
+  </action>
+  <action name="actionHeure_de_Bouf_Yagouni_Mouhammed_Temps_R_el">
+   <property name="text">
+    <string>Heure de Bouf (Yagouni Mouhammed) Temps Réel</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
